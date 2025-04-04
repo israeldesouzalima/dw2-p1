@@ -6,6 +6,7 @@ import updateProduto from "./model/produtos/updateProduto.js";
 import deleteProduto from "./model/produtos/deleteProduto.js";
 
 import postUser from './model/usuario/postUser.js'
+import getUser from './model/usuario/getUser.js'
 
 const app = express();
 app.use(express.json());
@@ -17,5 +18,6 @@ app.use("/produtos", updateProduto);
 app.use("/produtos", deleteProduto);
 
 app.use('/usuario', postUser)
+app.use('/usuario', getUser)
 
 export default app;
