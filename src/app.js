@@ -9,6 +9,7 @@ import postUser from './model/usuario/postUser.js'
 import getUser from './model/usuario/getUser.js'
 import getUserById from './model/usuario/getUserById.js'
 import updateUser from './model/usuario/updateUser.js'
+import deleteUser from './model/usuario/deleteUser.js'
 
 const app = express();
 app.use(express.json());
@@ -23,5 +24,6 @@ app.use('/usuario', postUser)
 app.use('/usuario', getUser)
 app.use('/usuario', getUserById)
 app.use('/usuario', updateUser)
+app.use('/usuario', deleteUser)
 
 export default app;
