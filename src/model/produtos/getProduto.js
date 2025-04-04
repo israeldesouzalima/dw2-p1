@@ -1,5 +1,5 @@
 import express from 'express';
-import connectionDB from '../config/connectionDB.js';
+import connectionDB from '../../config/connectionDB.js';
 
 const router = express.Router();
 
