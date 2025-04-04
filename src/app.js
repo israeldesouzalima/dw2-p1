@@ -5,6 +5,8 @@ import postProduto from "./model/produtos/postProduto.js";
 import updateProduto from "./model/produtos/updateProduto.js";
 import deleteProduto from "./model/produtos/deleteProduto.js";
 
+import postUser from './model/usuario/postUser.js'
+
 const app = express();
 app.use(express.json());
 
@@ -13,5 +15,7 @@ app.use("/produtos", getProduto);
 app.use("/produtos", postProduto);
 app.use("/produtos", updateProduto);
 app.use("/produtos", deleteProduto);
+
+app.use('/usuario', postUser)
 
 export default app;
